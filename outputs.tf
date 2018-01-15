@@ -1,11 +1,11 @@
-# name of the EC2 CloudWatch Only role
+# ARN of the EC2 CloudWatch Only role
 output "ec2_cloudwatch_role" {
-  value = "${aws_iam_role.cw.name}"
+  value = "${aws_iam_role.cw.arn}"
 }
 
-# name of the EC2 CloudWatch+Tag modification role
+# ARN of the EC2 CloudWatch+Tag modification role
 output "ec2_cloudwatch_tagger_role" {
-  value = "${aws_iam_role.cw_tagger.name}"
+  value = "${aws_iam_role.cw_tagger.arn}"
 }
 
 # name of the default root key
